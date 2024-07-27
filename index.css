@@ -1,0 +1,266 @@
+/* Base styles */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.726);
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.clear-fix {
+    clear: both;
+}
+
+.left img {
+    width: 120px;
+    padding-inline: 110px;
+    padding-block: 20px;
+}
+
+.right ul li {
+    display: inline-block;
+    padding: 10px;
+    font-size: 17px;
+}
+
+.right a {
+    color: white;
+    text-decoration: none;
+}
+
+.right ul {
+    padding-inline: 110px;
+    padding-block: 20px;
+}
+
+/* Home section */
+#home {
+    height: 100vh;
+    background-image: url(./images/WhatsApp\ Image\ 2024-07-27\ at\ 6.43.28\ PM.jpeg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.center {
+    text-align: center;
+    padding-top: 250px;
+    color: white;
+}
+
+.center img {
+    width: 400px;
+}
+
+.center .btnleft,
+.center .btnright {
+    padding-inline: 20px;
+    padding-block: 10px;
+    background-color: #C1AB84;
+}
+
+/* About section */
+#about img {
+    width: 100%;
+}
+
+.aboutleft {
+    float: left;
+    width: 35%;
+}
+
+.aboutright {
+    float: left;
+    width: 50%;
+    text-align: center;
+    padding-top: 100px;
+}
+
+h2 span {
+    color: #0797C7;
+    font-size: 30px;
+}
+
+p {
+    font-size: 17px;
+    padding-block: 20px;
+}
+
+.aboutright button {
+    padding: 20px;
+    border: 2px solid black;
+    background-color: transparent;
+}
+
+/* Layer section */
+.layer {
+    height: 400px;
+    background-image: url(./images/WhatsApp\ Image\ 2024-07-27\ at\ 6.43.31\ PM.jpeg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+}
+
+/* Meals section */
+#meals {
+    padding: 40px;
+}
+
+#meals img {
+    border-radius: 50%;
+}
+
+#meals .one,
+#meals .two,
+#meals .three,
+#meals .four {
+    float: left;
+    width: 23%;
+    text-align: center;
+    margin-left: 20px;
+}
+
+.line {
+    height: 3px;
+    width: 100px;
+    background-color: #0797C7;
+    margin: auto;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 1200px) {
+    .right ul {
+        padding-inline: 20px;
+    }
+}
+
+@media (max-width: 992px) {
+    .left img {
+        padding-inline: 20px;
+    }
+
+    .right ul {
+        padding-inline: 20px;
+    }
+
+    .right ul li {
+        display: block;
+        padding: 5px 0;
+        font-size: 14px;
+    }
+
+    #home .center img {
+        width: 300px;
+    }
+
+    .aboutleft,
+    .aboutright {
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .aboutleft {
+        margin-bottom: 20px;
+    }
+
+    .aboutright {
+        padding-top: 20px;
+    }
+
+    #meals .one,
+    #meals .two,
+    #meals .three,
+    #meals .four {
+        width: 48%;
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .left img {
+        width: 100px;
+        padding-inline: 10px;
+    }
+
+    .right ul {
+        padding-inline: 10px;
+    }
+
+    .right ul li {
+        display: block;
+        padding: 5px 0;
+        font-size: 12px;
+    }
+
+    #home .center {
+        padding-top: 150px;
+    }
+
+    #home .center img {
+        width: 250px;
+    }
+
+    #meals .one,
+    #meals .two,
+    #meals .three,
+    #meals .four {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .layer {
+        height: 300px;
+    }
+}
+
+@media (max-width: 576px) {
+    .left img {
+        width: 80px;
+        padding-inline: 5px;
+    }
+
+    .right ul {
+        padding-inline: 5px;
+    }
+
+    .right ul li {
+        display: block;
+        padding: 5px 0;
+        font-size: 10px;
+    }
+
+    #home .center {
+        padding-top: 100px;
+    }
+
+    #home .center img {
+        width: 200px;
+    }
+
+    .aboutleft,
+    .aboutright {
+        width: 100%;
+        text-align: center;
+    }
+
+    #meals .one,
+    #meals .two,
+    #meals .three,
+    #meals .four {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .layer {
+        height: 200px;
+    }
+}
